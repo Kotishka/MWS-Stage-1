@@ -1,10 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
-body,
-p,
-td,
-th {
+body, p, td, th {
   color: #333;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 10pt;
@@ -17,8 +14,7 @@ body {
 	position:relative;
 }
 
-li, 
-ul {
+li, ul {
   color: #333;
   display: inline-block;
 	font-family: Arial, Helvetica, sans-serif;
@@ -30,8 +26,7 @@ a {
 	text-decoration: none;
 }
 
-a:hover, 
-a:focus {
+a:hover, a:focus {
 	color: #3397db;
 	text-decoration: none;
 }
@@ -40,12 +35,7 @@ a img {
 	border: none 0 #fff;
 }
 
-h1, 
-h2,
-h3, 
-h4, 
-h5, 
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0 0 20px;
 }
@@ -82,7 +72,7 @@ nav, h1 {
   line-height: 3.8;
 }
 
-nav, h1, a {
+nav, h1 {
   color: #fff;
   font-size: 16pt;
   font-weight: 600;
@@ -321,7 +311,7 @@ nav, h1, a {
 }
 
 /* ====================== Media Queries ====================== */
-@media screen and (min-width:882px) and (max-width: 1123px) {
+@media screen and (min-width:890px) and (max-width: 1123px) {
   #restaurants-list li {
     min-height: 300px;
     padding: 30px 0 10px 30px;
@@ -347,7 +337,7 @@ nav, h1, a {
   }
 }
 
-@media screen and (min-width:540px) and (max-width: 882px) {
+@media screen and (min-width:550px) and (max-width: 890px) {
   #restaurants-list li {
     min-height: 270px;
     padding: 30px 0 10px 30px;
@@ -377,7 +367,7 @@ nav, h1, a {
   }
 }
 
-@media screen and (min-width:410px) and (max-width: 540px) {
+@media screen and (min-width:410px) and (max-width: 550px) {
   #restaurants-list li {
     min-height: 163px;
     padding: 10px 0 10px 20px;
