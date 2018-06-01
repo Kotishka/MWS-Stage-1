@@ -53,8 +53,6 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   background-color: #f3f3f3;
   min-height: 100%;
   order: 2;
-  display:flex;
-  flex-direction:row;
 }
 
 #footer {
@@ -89,12 +87,12 @@ nav, h1 {
 }
 
 #breadcrumb {
-    padding: 10px 40px 16px;
+    padding: 15px 3px 15px 40px;
     list-style: none;
     background-color: #eee;
     font-size: 17px;
     margin: 0;
-    width: calc(50% - 80px);
+    width: -webkit-fill-available;;
 }
 
 /* Display list items side by side */
@@ -214,12 +212,12 @@ nav, h1 {
 
 /* ====================== Restaurant Details ====================== */
 .inside {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
 }
 
 .inside header {
-  position: fixed;
+  position: relative;
   top: 0;
   width: 100%;
   z-index: 1000;
@@ -227,26 +225,30 @@ nav, h1 {
 }
 
 .inside #map-container {
-  background: blue none repeat scroll 0 0;
-  height: 100%;
-  position: fixed;
-  right: 0;
-  top: 80px;
-  width: 50%;
-  order: 2;
+  background: #f3f3f3 none repeat scroll 0 0;
+  padding: 25px 40px 40px 40px;
+  order: 7;
+  border-bottom: 1px solid #d9d9d9;
+  border-top: 1px solid #fff;
 }
 
 .inside #map {
   background-color: #ccc;
-  height: 100%;
-  width: 100%;
 }
 
 .inside #footer {
   bottom: 0;
-  position: absolute;
-  width: 100%;
+  position: relative;
   order: 3;
+}
+
+#map-information {
+  color: #C03221;
+  font-size: 17pt;
+  font-weight: 300;
+  letter-spacing: -1px;
+  margin-bottom:10px;
+  padding:0;
 }
 
 #restaurant-name {
@@ -256,20 +258,32 @@ nav, h1 {
   font-weight: 200;
   letter-spacing: 0;
   line-height: 1.1;
-  margin: 15px 0 30px;
+  margin: 15px 0 15px;
   text-transform: uppercase;
-  order: 1;
 }
 
 #restaurant-img {
-  width: 95%;
-  order: 2;
+  max-width: 90%;
 }
 
-#restaurant-address {
-  font-size: 12pt;
-  margin: 10px 0;
-  order: 4;
+#restaurant-side {
+  order: 1;
+  padding: 5px 0px 25px 40px;
+}
+
+#restaurant-info {
+  order: 2;
+  width: 50%;
+  padding: 55px 0 0 0;
+}
+
+#restaurant-info h3 {
+  color: #C03221;
+  font-size: 17pt;
+  font-weight: 300;
+  letter-spacing: -1px;
+  margin-bottom:10px;
+  padding:0;
 }
 
 #restaurant-cuisine {
@@ -282,30 +296,28 @@ nav, h1 {
   padding: 2px 0;
   text-align: center;
   text-transform: uppercase;
-  width: 95%;
-  order: 3;
+  max-width: 90%;
 }
 
 #restaurant-container {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
-  padding: 140px 40px 30px;
-  width: 50%;
+  padding: 0;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  order: 1;
+  flex-direction: row;
 }
 
 #reviews-container {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
-  padding: 25px 0px 30px;
+  padding: 25px 0 0 40px;
   order: 6;
 }
 
-#reviews-container h2 {
+#reviews-container h3 {
   color: #C03221;
-  font-size: 24pt;
+  font-size: 17pt;
   font-weight: 300;
   letter-spacing: -1px;
   padding-bottom: 1pt;
@@ -323,9 +335,9 @@ nav, h1 {
   list-style-type: none;
   margin: 0 0 30px;
   overflow: hidden;
-  padding: 0 20px 20px;
+  padding: 20px 20px 10px 20px;
   position: relative;
-  width: 85%;
+  width: 90%;
 }
 
 #reviews-list li p {
@@ -335,7 +347,7 @@ nav, h1 {
   order: 5;
 }
 #restaurant-hours td {
-  color: #666;
+  color: #000;
 }
 
 /* ====================== Media Queries ====================== */
