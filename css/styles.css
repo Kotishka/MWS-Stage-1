@@ -51,13 +51,11 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 
 #secondary-content {
   background-color: #f3f3f3;
-  min-height: 100%;
-  order: 2;
 }
 
 #footer {
   background-color: #545E75;
-  color: #aaa;
+  color: #dddcdc;
   font-size: 8pt;
   letter-spacing: 1px;
   padding: 25px;
@@ -210,47 +208,17 @@ nav, h1 {
   text-transform: uppercase;
 }
 
-/* ====================== Restaurant Details ====================== */
-.inside {
-  display: inline-flex;
-  flex-direction: column;
-}
+/* ====================== Restaurant Details Secondary Page ====================== */
 
+/* Header */
 .inside header {
   position: relative;
   top: 0;
   width: 100%;
   z-index: 1000;
-  order: 1;
 }
 
-.inside #map-container {
-  background: #f3f3f3 none repeat scroll 0 0;
-  padding: 25px 40px 40px 40px;
-  order: 7;
-  border-bottom: 1px solid #d9d9d9;
-  border-top: 1px solid #fff;
-}
-
-.inside #map {
-  background-color: #ccc;
-}
-
-.inside #footer {
-  bottom: 0;
-  position: relative;
-  order: 3;
-}
-
-#map-information {
-  color: #29755d;
-  font-size: 17pt;
-  font-weight: 300;
-  letter-spacing: -1px;
-  margin-bottom:10px;
-  padding:0;
-}
-
+/*Restaurant Information */
 #restaurant-name {
   color: #C03221;
   font-family: Arial,sans-serif;
@@ -301,18 +269,40 @@ nav, h1 {
 
 #restaurant-container {
   border-bottom: 1px solid #d9d9d9;
-  border-top: 1px solid #fff;
-  padding: 0;
   width: 100%;
   display: flex;
   flex-direction: row;
 }
 
+#restaurant-hours td {
+  color: #000;
+}
+
+/* Map */
+.inside #map-container {
+  padding: 25px 40px 40px 40px;
+  border-bottom: 1px solid #d9d9d9;
+  border-top: 1px solid #fff;
+}
+
+.inside #map {
+  background-color: #ccc;
+}
+
+#map-information {
+  color: #29755d;
+  font-size: 17pt;
+  font-weight: 300;
+  letter-spacing: -1px;
+  margin-bottom:10px;
+  padding:0;
+}
+
+/* Reviews */
 #reviews-container {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
   padding: 25px 0 0 40px;
-  order: 6;
 }
 
 #reviews-container h3 {
@@ -350,12 +340,6 @@ nav, h1 {
 
 #reviews-list li p {
   margin: 0 0 10px;
-}
-#restaurant-hours {
-  order: 5;
-}
-#restaurant-hours td {
-  color: #000;
 }
 
 /* ====================== Media Queries ====================== */
