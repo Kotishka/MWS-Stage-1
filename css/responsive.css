@@ -14,7 +14,7 @@
       max-width: 85%;
     }
   
-    #restaurants-list li a {
+    .restaurant-btn {
       font-size: 9pt;
       padding: 8px 52px 10px;
     }
@@ -46,21 +46,21 @@
     }
 
     #restaurant-container {
-        flex-direction: column;
-      }
+       flex-direction: column;
+    }
     
-      #restaurant-info {
-        padding: 0px 0 25px 40px;
-        width: 100%;
+    #restaurant-info {
+       padding: 0 0 25px 40px;
+       width: 100%;
     }
        
-      #restaurant-img {
-        max-width: 60%;
-      }
+    #restaurant-img {
+      max-width: 60%;
+    }
     
-      #restaurant-cuisine {
-        max-width: 60%;
-      }
+    #restaurant-cuisine {
+      max-width: 60%;
+    }
   }
   
   @media screen and (min-width:425px) and (max-width: 549px) {
@@ -75,11 +75,11 @@
     }
   
     #restaurants-list .restaurant-img {
-        max-width: 94%;
-        margin-top: 3%;
+      max-width: 94%;
+      margin-top: 3%;
     }
   
-    #restaurants-list li a {
+    .restaurant-btn {
       font-size: 10pt;
       padding: 8px 109px 10px;
     }
@@ -88,30 +88,31 @@
       font-size: 10pt;
       width: 154px;
     }
+
     nav h1 a {
-    font-size: 11pt;
+      font-size: 11pt;
     }
   
     #map {
-    height: 350px;
+      height: 350px;
     }
   
     #restaurant-container {
-        flex-direction: column;
-      }
+      flex-direction: column;
+    }
     
-      #restaurant-info {
+    #restaurant-info {
         padding: 0 0 25px 40px;
         width: 100%;
     }
        
-      #restaurant-img {
-        max-width: 60%;
-      }
+    #restaurant-img {
+      max-width: 60%;
+    }
     
-      #restaurant-cuisine {
-        max-width: 60%;
-      }
+    #restaurant-cuisine {
+      max-width: 60%;
+    }
   }
   @media screen and (max-width: 424px) {
     #restaurants-list li {
@@ -133,7 +134,7 @@
         margin-top: 4%;
     }
   
-    #restaurants-list li a {
+    .restaurant-btn {
       font-size: 10pt;
       padding: 8px 69px 10px;
     }
@@ -155,16 +156,16 @@
         flex-direction: column;
       }
     
-      #restaurant-info {
-        padding: 0 0 25px 40px;
-        width: 100%;
+    #restaurant-info {
+       padding: 0 0 25px 40px;
+       width: 100%;
     }
        
-      #restaurant-img {
-        max-width: 90%;
-      }
+    #restaurant-img {
+       max-width: 90%;
+    }
     
-      #restaurant-cuisine {
-        max-width: 90%;
-      }
+    #restaurant-cuisine {
+       max-width: 90%;
+    }
   }
