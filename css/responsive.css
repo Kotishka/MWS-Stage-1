@@ -75,7 +75,8 @@
     }
   
     #restaurants-list .restaurant-img {
-      max-width: 0;
+        max-width: 94%;
+        margin-top: 3%;
     }
   
     #restaurants-list li a {
@@ -100,7 +101,7 @@
       }
     
       #restaurant-info {
-        padding: 0px 0 25px 40px;
+        padding: 0 0 25px 40px;
         width: 100%;
     }
        
@@ -128,7 +129,8 @@
     }
   
     #restaurants-list .restaurant-img {
-      max-width: 0;
+        max-width: 91%;
+        margin-top: 4%;
     }
   
     #restaurants-list li a {
@@ -154,7 +156,7 @@
       }
     
       #restaurant-info {
-        padding: 0px 0 25px 40px;
+        padding: 0 0 25px 40px;
         width: 100%;
     }
        
