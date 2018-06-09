@@ -162,6 +162,7 @@ createRestaurantHTML = (restaurant) => {
 
   const more = document.createElement('a');
   more.innerHTML = 'View Details';
+  more.setAttribute('class', 'restaurant-btn')
   more.setAttribute('role', 'button');
   more.setAttribute('aria-label', 'View restaurant details: ' +  restaurant.name);
   more.href = DBHelper.urlForRestaurant(restaurant);
@@ -181,5 +182,19 @@ addMarkersToMap = (restaurants = self.restaurants) => {
       window.location.href = marker.url
     });
     self.markers.push(marker);
+  });
+}
+/**
+ * Check if service worker is in browser
+ */
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/sw.js').then(function(registration) {
+      // Registration was successful
+      console.log('ServiceWorker registration successful with scope: ', registration.scope);
+    }, function(err) {
+      // registration failed :(
+      console.log('ServiceWorker registration failed: ', err);
+    });
   });
 }
