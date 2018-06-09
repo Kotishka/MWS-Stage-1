@@ -18,6 +18,9 @@ window.initMap = () => {
       DBHelper.mapMarkerForRestaurant(self.restaurant, self.map);
     }
   });
+  google.maps.event.addListenerOnce(self.map, 'idle', () => {
+    document.getElementsByTagName('iframe')[0].title = "Google Maps";
+  });
 }
 
 /**
@@ -56,7 +59,8 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
   address.innerHTML = restaurant.address;
 
   const image = document.getElementById('restaurant-img');
-  image.className = 'restaurant-img'
+  image.className = 'restaurant-img';
+  image.alt = "Picture of " + restaurant.name + " Restaurant";
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
 
   const cuisine = document.getElementById('restaurant-cuisine');
