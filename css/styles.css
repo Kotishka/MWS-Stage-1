@@ -24,8 +24,7 @@ a {
 }
 
 a:hover, a:focus {
-	color: #3397db;
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 a img {
@@ -183,9 +182,9 @@ nav, h1 {
   margin: 0;
 }
 
-.restaurant-btn {
+.restaurant-link {
   background-color: #29755d;
-  border-bottom: 3px solid #eee;
+  border: none;
   color: #fff;
   display: inline-block;
   font-size: 10pt;
@@ -231,7 +230,7 @@ nav, h1 {
 #restaurant-info {
   font-size: 14pt;
   order: 2;
-  padding: 55px 0 0 0;
+  padding: 70px 0 0 0;
   width: 50%;
 }
 
@@ -264,13 +263,34 @@ nav, h1 {
   width: 100%;
 }
 
+#restaurant-address {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 80%;
+}
+
 #restaurant-hours {
   height: 50%;
-  width: 100%;
+  width: 90%;
 }
 
 #restaurant-hours td {
   color: #000;
+}
+
+.restaurant-hours-block {
+  display: flex;
+  flex-direction: row;
+}
+
+.restaurant-day {
+  order: 1;
+  width: 35%;
+}
+
+.restaurant-time {
+  order: 2;
+  width: 65%;
 }
 
 /* Map */
