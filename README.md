@@ -27,3 +27,5 @@ Most of the code in this project has been written to the ES6 JavaScript specific
 
 
 # MWS-Stage-1
+
+Please add your google api key in files index.html and restaurant.html
