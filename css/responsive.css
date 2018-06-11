@@ -114,7 +114,7 @@
       flex-direction: column;
     }
   }
-  @media screen and (max-width: 424px) {
+  @media screen and (min-width:321px) and (max-width: 424px) {
     #restaurants-list li {
       min-height: 163px;
       padding: 10px 0 10px 20px;
@@ -171,5 +171,29 @@
 
     #restaurant-name {
         margin: 15px 0 20px;
+    }
+  }
+
+  @media screen and (max-width:320px) {
+    h1 {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 10px;
+        font-size: 9pt;
+    }
+    
+    h2 {
+        max-height: 70px;
+        font-size: 12.5pt;
+        padding-bottom: 15px;
+    }
+
+    .filter-options {
+        height: 150px;
+    }
+    
+    .filter-options select {
+        font-size: 8.5pt;
+        width: 137px;
     }
   }
